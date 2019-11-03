@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+ 
+	function SumTo (n) {
+  if (n>0) { 
+    return  n + SumTo(n-1);
+  } else {
+    return n;
+  }
+}
+
+alert( SumTo (2) ); 
+</script>

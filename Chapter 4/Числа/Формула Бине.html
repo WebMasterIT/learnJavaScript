@@ -1,0 +1,27 @@
+<html>
+<body>
+<meta charset="utf-8">
+<script>
+ 
+function fibBinet(num) {
+     'use strict';
+      var goldenSection = (1 + Math.sqrt(5)) / 2;
+      var result = (Math.pow(goldenSection, num)) / Math.sqrt(5);
+      return Math.round(result);
+    }
+ function fib(n) {
+      var a = 1,
+        b = 0,
+        x;
+      for (i = 0; i < n; i++) {
+        x = a + b;
+        a = b
+        b = x;
+      }
+      return b;
+    }
+    alert( fibBinet(77) );
+    alert( fib(77) );
+</script> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+  <meta charset="utf-8">
+</head>
+<body>
+    <script>
+    	var login  = prompt ("Кто пришел?", '');
+    	 var par ;
+if (login == "Админ") {
+	var par = prompt ("Пароль?", "");
+
+if (par == 'Черный властелин') {
+	alert('Добро пожаловать');
+}
+
+else if (par == "Отмена") {
+	alert('Вход отменен');
+} else {
+	alert("Пароль неверен");
+} 
+
+} else if (login == "Отмена") {
+  alert('Вход отменен');
+} else {
+	alert("Я вас не знаю");
+}
+    </script>
+</body>
+</html>
