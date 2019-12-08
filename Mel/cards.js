@@ -261,37 +261,7 @@ var data = [{
 }
 ]
 
-
-document.getElementById("sort1").addEventListener('click', function (event) { 
-
-    var element = document.getElementById("articles");
-    while (element.firstChild) {
-     element.removeChild(element.firstChild);
- }
-
- data.sort(compareNames);    
- for (i = 0; i < 8; i++) {
-    createCard(i);
-}
-
-
-
-}); 
-
-document.getElementById("sort2").addEventListener('click', function (event) { 
-    var element = document.getElementById("articles");
-    while (element.firstChild) {
-     element.removeChild(element.firstChild);
- }
- data.sort(compareViews);
-
- for (i = 0; i < 8; i++) {
-    createCard(i);
-}
-
-}); 
-
-
+// Функции сортировки 
 function compareNames(a, b) {
 
   const blogTextA = a.blogText.toUpperCase();
@@ -318,80 +288,75 @@ function compareViews(a, b) {
     comparison = -1;
 }
 return comparison;
+
+
+document.getElementById("sort1").addEventListener('click', function (event) { 
+
+    var element = document.getElementById("articles");
+    while (element.firstChild) {
+       element.removeChild(element.firstChild);
+   }
+
+   data.sort(compareNames);    
+   for (i = 0; i < 8; i++) {
+    createCard(i);
 }
 
 
-// let filter = function() {
-//     let input = document.getElementById('filter-input');
-//     input.addEventListener('keyup', function() {
-//         let filter = input.value.toLowerCase();
-//         // filterElements = document.querySelectorAll('.cardsText');
 
-//         filterElements.forEach(item => {
-//             if(item.innerHTML.toLowerCase().indexOf(filter) > -1) {
-//              item.style.display = '';
-//          }
-//          else {
-//             data.blogText.style.display = 'none';
-//              // articles.style.display = 'none';
+}); 
 
-//          }
-//      })
-//     })
-// };
+document.getElementById("sort2").addEventListener('click', function (event) { 
+    var element = document.getElementById("articles");
+    while (element.firstChild) {
+       element.removeChild(element.firstChild);
+   }
+   data.sort(compareViews);
 
+   for (i = 0; i < 8; i++) {
+    createCard(i);
+}
 
-//  function filterByName() {
-//      let input = document.getElementById('filter-input');
-//      input.addEventListener('keyup',  function() {
-//       card.blogText == input.value ;
-//     })
-//  }
-//      for (var i = 0; i < data.length; i++) {
-//   if (data[i].blogText  == input.value) {
-//     data.push(data[i]);
-//   }
-// }
+}); 
 
+//Функция Поиска 
 
-    let filterByName = function() {
-        let input = document.getElementById('filter-input');
+let filterByName = function() {
+    let input = document.getElementById('filter-input');
 
-        filteredData = data;
+    filteredData = data;
 
-        input.addEventListener('keyup', function() {
+    input.addEventListener('keyup', function() {
 
-         var element = document.getElementById("articles");
-         while (element.firstChild) {
-           element.removeChild(element.firstChild);
-       }
+       var element = document.getElementById("articles");
+       while (element.firstChild) {
+         element.removeChild(element.firstChild);
+     }
 
-       const filterValues = (blogText) => {
+     const filterValues = (blogText) => {
         return filteredData.filter(data=> {
-            
+
             return data.blogText.toLowerCase().indexOf(blogText.toLowerCase()) > -1;
             if (this.value === '') {filteredData = data};
         });    
-
-
     }
     
     data = filterValues(this.value);
     console.log(data);
 
     for (let i = 0;   i < Math.min(8, filteredData.length); i++) {
-         createCard(i) 
-    }
+       createCard(i) 
+   }
 
-    })
+})
 
-    }
+}
 
-    filterByName();
-
-
+filterByName();
 
 
+
+// Функция создания карточки
 function createCard(i) {
 
     var card = document.createElement('article');
@@ -482,19 +447,14 @@ function moreArticles(startPoint, numbersOfElementsToShow) {
 
 
 moreArticlesButton.addEventListener("click", (function() {
-   moreArticles(startPoint = startPoint + 5, numbersOfElementsToShow += 5)}))
+ moreArticles(startPoint = startPoint + 5, numbersOfElementsToShow += 5)}))
 //startPoint = startPoint + 5, numbersOfElementsToShow += 5);
 
-
 for (i = 0; i < 8; i++) {
-    //pastTemplate();
-
     createCard(i);
-
 }
 
 moreArticles();
-
 
 function sortFunction() {
   document.getElementById("mySort").classList.toggle("show");
@@ -508,9 +468,9 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
+           }
+        }
     }
-}
-}
 }
 
 
