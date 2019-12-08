@@ -86,11 +86,17 @@
             </a>    
         </div>
     </div>
-    <div class="sortPlace">
-        <p id="sortText">СОРТИРОВКА
-        <button id="sort-asc">ПО возрастанию</button>
-        <button id="sort-desc">ПО убыванию</button>
-        </p>
+    <br>
+    <div class="sortArticles">
+    	<button onclick="sortFunction()" class="sortBtn">СОРТИРОВКА</button>
+    	<div id="mySort" class="sortArticlesContent">
+    		<a href="#" id="sort1">По алфавиту</a>
+    		<a href="#" id="sort2">По популярности</a>
+    	</div>
+    </div>
+    <div>
+    	<input type="text" id='filter-input' placeholder="Поиск..." class="search">
+
     </div>
     <div id="wrapper">
         <div id="articles">
@@ -105,465 +111,465 @@
                             </div>
                         </div>
                </article> -->
-               <article data-sort='1'>
-                <img src="img/articles/10.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                </p>
-                <div class="articleInfo">
-                    <div class="articleViwes data-sort='21' ">
-                        <i class="fas fa-clock"></i> Читать: 2 минуты
-
-                    </div>
-                </div>
-            </article>
-            <article data-sort='2' >
-                <img src="img/articles/11.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 4 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='3'>
-                <img src="img/articles/12.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='4'>
-                <img src="img/articles/13.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='5'>
-                <img src="img/articles/14.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='6'>
-                <img src="img/articles/15.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='7'>
-                <img src="img/articles/16.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='8'>
-                <img src="img/articles/18.jpg" width="100" height="500" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети </p>
-                <div class="articleInfo">
-                    <div class="articleViwes">
-                        <i class="fas fa-clock"></i> Читать: 2 минуты
-                    </div>
-                </div>
-
-            </article>
-            <article data-sort='9'>
-                <img src="img/articles/19.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='10'>
-                <img src="img/articles/20.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='11'>
-                <img src="img/articles/21.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='12'>
-                <img src="img/articles/22.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='13'>
-                <img src="img/articles/23.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="fas fa-eye"></i> 3 879
-                        </div>
-                        <div class="articleViwes">
-                            <i class="fas fa-comment-alt"></i> 13
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article data-sort='14'>
-                <img src="img/articles/24.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='15'>
-                <img src="img/articles/25.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='16'>
-                <img src="img/articles/26.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='17'>
-                <img src="img/articles/27.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='18'>
-                <img src="img/articles/28.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='19'>
-                <img src="img/articles/29.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='20'>
-                <img src="img/articles/30.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='21'>
-                <img src="img/articles/31.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='22'>
-                <img src="img/articles/32.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='23'>
-                <img src="img/articles/33.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='24'>
-                <img src="img/articles/34.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='25'>
-                <img src="img/articles/35.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='26'>
-                <img src="img/articles/36.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='27'>
-                <img src="img/articles/37.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='28' >
-                <img src="img/articles/38.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='29' >
-                <img src="img/articles/39.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='30'>
-                <img src="img/articles/40.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='31'>
-                <img src="img/articles/41.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='32'>
-                <img src="img/articles/42.png" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='33' > 
-                <img src="img/articles/43.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='34'>
-                <img src="img/articles/44.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='35'>
-                <img src="img/articles/45.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="fas fa-eye"></i> 3 879
-                        </div>
-                        <div class="articleViwes">
-                            <i class="far fa-comment-alt"></i> 13
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='36'>
-                <img src="img/articles/46.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
-                    <div class="articleInfo">
-                        <div class="articleViwes">
-                            <i class="far fa-clock"></i> Читать: 2 минуты
-                        </div>
-                    </div>
-                </p>
-            </article>
-            <article  data-sort='37'>
-                <img src="img/articles/47.jpg" alt="Изображение" title="Изображение">
-                <span class="cardsBlogs"> Блоги </span>
-                <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
-                </p>
-                <div class="articleInfo">
-                    <div class="articleViwes">
-                        <i class="far fa-eye"></i> 3 879
-                    </div>
-                    <div class="articleViwes">
-                        <i class="far fa-comment-alt "></i> 13
-                    </div>
-                </div>
-            </article>
-            <article  data-sort='38'>
-                <img src="img/articles/48.jpg" alt="Изображение" title="Изображение">
-                <span class="cardsBlogs"> Блоги </span>
-                <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
-                </p>
-                <div class="articleInfo">
-                    <div class="articleViwes">
-                        <i class="fas fa-eye "></i> 3 879
-                    </div>
-                    <div class="articleViwes">
-                        <i class="fas fa-comment-alt"></i> 13
-                    </div>
-                </div>
-            </article>
-            <article  data-sort='39'>
-                <img src="img/articles/49.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
-                </p>
-                <div class="articleInfo">
-                    <div class="articleViwes">
-                        <i class="fas fa-eye"></i> 3 879
-                    </div>
-                    <div class="articleViwes">
-                        <i class="fas fa-comment-alt"></i> 13
-                    </div>
-                </div>
-            </article>
-            <article  data-sort='40'>
-                <img src="img/articles/50.jpg" alt="Изображение" title="Изображение">
-                <p class="cardsBlogs"> Блоги </p>
-                <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
-                </p>
-                <div class="articleInfo">
-                    <div class="articleViwes">
-                        <i class="fas fa-eye"></i> 2 589
-                    </div>
-                    <div class="articleViwes">
-                        <i class="fas fa-comment-alt"></i> 13
-                    </div>
-                </div>
-            </article>
+            <!--    <article data-sort='1'>
+             <img src="img/articles/10.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+             </p>
+             <div class="articleInfo">
+                 <div class="articleViwes data-sort='21' ">
+                     <i class="fas fa-clock"></i> Читать: 2 минуты
+            
+                 </div>
+             </div>
+                        </article>
+                        <article data-sort='2' >
+             <img src="img/articles/11.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 4 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='3'>
+             <img src="img/articles/12.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Папа почти ничего мне не запрещал»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='4'>
+             <img src="img/articles/13.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='5'>
+             <img src="img/articles/14.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='6'>
+             <img src="img/articles/15.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='7'>
+             <img src="img/articles/16.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='8'>
+             <img src="img/articles/18.jpg" width="100" height="500" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети </p>
+             <div class="articleInfo">
+                 <div class="articleViwes">
+                     <i class="fas fa-clock"></i> Читать: 2 минуты
+                 </div>
+             </div>
+            
+                        </article>
+                        <article data-sort='9'>
+             <img src="img/articles/19.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='10'>
+             <img src="img/articles/20.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='11'>
+             <img src="img/articles/21.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='12'>
+             <img src="img/articles/22.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='13'>
+             <img src="img/articles/23.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="fas fa-eye"></i> 3 879
+                     </div>
+                     <div class="articleViwes">
+                         <i class="fas fa-comment-alt"></i> 13
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article data-sort='14'>
+             <img src="img/articles/24.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='15'>
+             <img src="img/articles/25.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='16'>
+             <img src="img/articles/26.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='17'>
+             <img src="img/articles/27.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='18'>
+             <img src="img/articles/28.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='19'>
+             <img src="img/articles/29.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='20'>
+             <img src="img/articles/30.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='21'>
+             <img src="img/articles/31.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='22'>
+             <img src="img/articles/32.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='23'>
+             <img src="img/articles/33.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='24'>
+             <img src="img/articles/34.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='25'>
+             <img src="img/articles/35.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='26'>
+             <img src="img/articles/36.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='27'>
+             <img src="img/articles/37.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='28' >
+             <img src="img/articles/38.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='29' >
+             <img src="img/articles/39.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='30'>
+             <img src="img/articles/40.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='31'>
+             <img src="img/articles/41.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='32'>
+             <img src="img/articles/42.png" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='33' > 
+             <img src="img/articles/43.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='34'>
+             <img src="img/articles/44.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='35'>
+             <img src="img/articles/45.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="fas fa-eye"></i> 3 879
+                     </div>
+                     <div class="articleViwes">
+                         <i class="far fa-comment-alt"></i> 13
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='36'>
+             <img src="img/articles/46.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> «Мама почти ничего мне не запрещала»: чего ждут от нас дети
+                 <div class="articleInfo">
+                     <div class="articleViwes">
+                         <i class="far fa-clock"></i> Читать: 2 минуты
+                     </div>
+                 </div>
+             </p>
+                        </article>
+                        <article  data-sort='37'>
+             <img src="img/articles/47.jpg" alt="Изображение" title="Изображение">
+             <span class="cardsBlogs"> Блоги </span>
+             <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
+             </p>
+             <div class="articleInfo">
+                 <div class="articleViwes">
+                     <i class="far fa-eye"></i> 3 879
+                 </div>
+                 <div class="articleViwes">
+                     <i class="far fa-comment-alt "></i> 13
+                 </div>
+             </div>
+                        </article>
+                        <article  data-sort='38'>
+             <img src="img/articles/48.jpg" alt="Изображение" title="Изображение">
+             <span class="cardsBlogs"> Блоги </span>
+             <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
+             </p>
+             <div class="articleInfo">
+                 <div class="articleViwes">
+                     <i class="fas fa-eye "></i> 3 879
+                 </div>
+                 <div class="articleViwes">
+                     <i class="fas fa-comment-alt"></i> 13
+                 </div>
+             </div>
+                        </article>
+                        <article  data-sort='39'>
+             <img src="img/articles/49.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
+             </p>
+             <div class="articleInfo">
+                 <div class="articleViwes">
+                     <i class="fas fa-eye"></i> 3 879
+                 </div>
+                 <div class="articleViwes">
+                     <i class="fas fa-comment-alt"></i> 13
+                 </div>
+             </div>
+                        </article>
+                        <article  data-sort='40'>
+             <img src="img/articles/50.jpg" alt="Изображение" title="Изображение">
+             <p class="cardsBlogs"> Блоги </p>
+             <p class="cardsText"> Как унификация образования играет против пелагогов и творчества
+             </p>
+             <div class="articleInfo">
+                 <div class="articleViwes">
+                     <i class="fas fa-eye"></i> 2 589
+                 </div>
+                 <div class="articleViwes">
+                     <i class="fas fa-comment-alt"></i> 13
+                 </div>
+             </div>
+                        </article> -->
         </div>
           <!--   </template> -->
         </div>
