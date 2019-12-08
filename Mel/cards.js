@@ -289,8 +289,6 @@ document.getElementById("sort2").addEventListener('click', function (event) {
     createCard(i);
 }
 
-
-
 }); 
 
 

@@ -257,16 +257,28 @@ a.Menuitem {
         margin-left: 85%;
     }
     .melButton {
-        margin-left: 290%;
+        margin-left: 250%;
     }
     .navigationHeaderButton {
         margin-left: 15%;
     }
     .menuHrefs {
-        margin-left: 20%;
+        margin-left: 18%;
     }
     .autorisationHeaderButton {
         margin-right: 18%;
+    }
+
+    .sortBtn {
+    }
+
+    .sortArticles {
+         margin-left: 350px;
+    }
+
+    #filter-input {
+        margin-left: 520px;
+        margin-top: -30px;
     }
 }
 
@@ -468,14 +480,13 @@ input:focus {
 
 #filter-input {
     display: flex;
-    margin-left: 380px;
-    margin-top: -30px;
+     
 }
 
 /* Dropdown Button */
 .sortBtn {
- margin-top: 15px;
-  margin-left: 100px;
+  margin-top: 15px;
+  position: relative;
   
   background-color: #20B2AA;
   color: white;
@@ -486,7 +497,7 @@ input:focus {
 }
 
 .sortArticles {
-  position: relative;
+   
   display: inline-block;
 }
 
@@ -494,7 +505,7 @@ input:focus {
 .sortArticlesContent {
   display: none;
   position: absolute;
-   margin-left: 100px;
+   
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -513,6 +524,4 @@ input:focus {
 
 .show {display:block;}
 
-.search {
-  margin-right: 10px;
-}
+ 
