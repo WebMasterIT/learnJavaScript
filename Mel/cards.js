@@ -321,23 +321,75 @@ return comparison;
 }
 
 
-let filter = function() {
-    let input = document.getElementById('filter-input');
-    input.addEventListener('keyup', function() {
-        let filter = input.value.toLowerCase(),
-        filterElements = document.querySelectorAll( '.cardsText');
+// let filter = function() {
+//     let input = document.getElementById('filter-input');
+//     input.addEventListener('keyup', function() {
+//         let filter = input.value.toLowerCase();
+//         // filterElements = document.querySelectorAll('.cardsText');
 
-        filterElements.forEach(item => {
-            if(item.innerHTML.toLowerCase().indexOf(filter) > -1) {
-             item.style.display = '';
-         }
-         else {
-             articles.style.display = 'none';
+//         filterElements.forEach(item => {
+//             if(item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+//              item.style.display = '';
+//          }
+//          else {
+//             data.blogText.style.display = 'none';
+//              // articles.style.display = 'none';
 
-         }
-     })
+//          }
+//      })
+//     })
+// };
+
+
+//  function filterByName() {
+//      let input = document.getElementById('filter-input');
+//      input.addEventListener('keyup',  function() {
+//       card.blogText == input.value ;
+//     })
+//  }
+//      for (var i = 0; i < data.length; i++) {
+//   if (data[i].blogText  == input.value) {
+//     data.push(data[i]);
+//   }
+// }
+
+
+    let filterByName = function() {
+        let input = document.getElementById('filter-input');
+
+        filteredData = data;
+
+        input.addEventListener('keyup', function() {
+
+         var element = document.getElementById("articles");
+         while (element.firstChild) {
+           element.removeChild(element.firstChild);
+       }
+
+       const filterValues = (blogText) => {
+        return filteredData.filter(data=> {
+            
+            return data.blogText.toLowerCase().indexOf(blogText.toLowerCase()) > -1;
+            if (this.value === '') {filteredData = data};
+        });    
+
+
+    }
+    
+    data = filterValues(this.value);
+    console.log(data);
+
+    for (let i = 0;   i < Math.min(8, filteredData.length); i++) {
+         createCard(i) 
+    }
+
     })
-};
+
+    }
+
+    filterByName();
+
+
 
 
 function createCard(i) {
