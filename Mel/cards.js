@@ -288,9 +288,9 @@ function compareViews(a, b) {
     comparison = -1;
 }
 return comparison;
+}
 
-
-document.getElementById("sort1").addEventListener('click', function (event) { 
+var sort =  document.getElementById("sort1").addEventListener('click', function (event) { 
 
     var element = document.getElementById("articles");
     while (element.firstChild) {
